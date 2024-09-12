@@ -178,6 +178,7 @@ t396_init('763477509');
 });</script><!-- /T396 --></div>
 
 
+<div class="formDiv">
 <form id="myForm">
     <label for="name">Есіміңізді жазыңыз:</label><br>
     <input type="text" id="name" name="Name" placeholder="Есіміңіз" required><br><br>
@@ -190,6 +191,7 @@ t396_init('763477509');
     <div class="buttuon"><button type="submit" id="submitBtn">Жіберу</button></div>
 </form>
 <div id="response"></div>
+</div>
 
 <script>
     document.getElementById('myForm').addEventListener('submit', function(event) {
@@ -225,36 +227,39 @@ t396_init('763477509');
 
 <!--/noindex--><!--googleon: all--></div>
 
+
 <style>
-	label[for="name"] {
-  font-size: 20px; /* Увеличьте размер текста до 20 пикселей */
-  margin-bottom: 10px;
-}
-
-label {
+ .formDiv{
+  margin: 20px;
+ }
+    label[for="name"] {
+      font-size: 20px; /* Увеличьте размер текста до 20 пикселей */
       margin-bottom: 10px;
-      font-size: 16px; /* Увеличить размер текста */
+      
     }
-
-input[type="text"] {
-  width: 100%; /* Сделать поле ввода шириной 100% от родительского элемента */
-  height: 40px; /* Увеличить высоту поля ввода */
-  padding: 20px; /* Добавить внутренние отступы */
-  font-size: 16px; /* Увеличить размер шрифта */
-  box-sizing: border-box; /* Учитывать padding и border в общей ширине и высоте элемента */
-  margin-top: 10px; /* Добавить верхние отступы */
-  border-radius: 10px;
-  border: 1px solid #860c0c; /* Установить цвет, толщину и стиль рамки */
-
-
-}
-
-
-.buttuon{
-	text-align: center;
-}
+  
+    label {
+      margin-bottom: 10px;
+      font-size: 18px; /* Увеличить размер текста */
+    }
+  
+    input[type="text"] {
+      width: calc(100% - 30px); /* Уменьшить ширину, чтобы учесть отступы */
+      height: 50px; /* Увеличить высоту поля ввода */
+      padding: 20px; /* Добавить внутренние отступы */
+      font-size: 16px; /* Увеличить размер шрифта */
+      box-sizing: border-box; /* Учитывать padding и border в общей ширине и высоте элемента */
+      margin-top: 10px; /* Добавить верхние отступы */
+      border-radius: 10px;
+      border: 1px solid #860c0c; /* Установить цвет, толщину и стиль рамки */
+    }
+  
+    .buttuon {
+      text-align: center;
+    }
+  
     button[type="submit"] {
-      background-color: #4b7400bb;
+      background-color: #0f0000;
       color: #fff;
       border: none;
       padding: 15px 40px;
@@ -262,18 +267,19 @@ input[type="text"] {
       cursor: pointer;
       font-size: 16px;
       transition: background-color 0.3s ease;
-	  text-align: center;
-	  border-radius: 10px;
-
+      text-align: center;
+      border-radius: 10px;
     }
+  
     button[type="submit"]:hover {
-      background-color: #0c3b00;
-	  
+      background-color: #270303;
     }
+  
     #response {
       margin-top: 20px;
     }
   </style>
+  
 
 </div> </div> <script>t_onReady(function () {
 t_onFuncLoad('t396_init', function () {
